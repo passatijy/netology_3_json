@@ -43,7 +43,7 @@ def print_result(count, inp_list):
 		print('Top used word: ', inp_list[i][0],' used: ', inp_list[i][1])
 		i = i+1
 
-# вызываю парсинг xml, параметры - имя файла, длинна слова для посчета
+# вызываю парсинг xml, параметры - имя файла, длинна слова для подсчета
 file = 'newsafr.xml'
 dict_with_word = count_words(parse_xml(file),6)
 result_list = search_most_used_word(dict_with_word)
@@ -51,7 +51,7 @@ result_list = search_most_used_word(dict_with_word)
 print('From xml:')
 print_result(10,result_list)
 
-# вызываю парсинг json, параметры - имя файла, длинна слова для посчета
+# вызываю парсинг json, параметры - имя файла, длинна слова для подсчета
 file = 'newsafr.json'
 dict_with_word = count_words(parse_json(file),9)
 result_list = search_most_used_word(dict_with_word)
