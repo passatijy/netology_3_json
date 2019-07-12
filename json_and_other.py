@@ -53,7 +53,7 @@ print_result(10,result_list)
 
 # вызываю парсинг json, параметры - имя файла, длинна слова для подсчета
 file = 'newsafr.json'
-dict_with_word = count_words(parse_json(file),9)
+dict_with_word = count_words(parse_json(file),6)
 result_list = search_most_used_word(dict_with_word)
 # печатаю результат, функция вывода принимает количество топовых слов и список результатов
 print('From json:')
